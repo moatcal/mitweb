@@ -100,10 +100,10 @@
               All
             </li>
             <li class="portfolio__filter-btn js-filter" data-filter="web">
-              Web design
+              Age
             </li>
             <li class="portfolio__filter-btn js-filter" data-filter="graphic">
-              Graphic design
+              A
             </li>
             <li class="portfolio__filter-btn js-filter" data-filter="flat">
               Flat design
@@ -228,52 +228,52 @@
         <style>
           #grad1 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#ffffff, #efeeee);
           }
           #grad2 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#efeeee, #eaeaea);
           }
           #grad3 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#eaeaea, #e5e5e5);
           }
           #grad4 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#e5e5e5, #d7d7d7);
           }
           #grad5 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#d7d7d7, #c6c6c6);
           }
           #grad6 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#c6c6c6, #adadad);
           }
           #grad7 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#adadad, #a2a2a2);
           }
           #grad8 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#a2a2a2, #8c8c8c);
           }
           #grad9 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#8c8c8c, #6c6c6c);
           }
           #grad10 {
             position: relative;
-            height: 200px;
+            height: 300px;
             background-image: linear-gradient(#6c6c6c, #202020);
           }
 
@@ -297,6 +297,17 @@
         <script>
           function myFunc(color) {
             console.log(color);
+            fetch("https://api.apispreadsheets.com/data/frGq7Z7GxsO8rVc8/", {
+	method: "POST",
+	body: JSON.stringify({"data": {"What number do you stop seeing Floaters?": color}}),
+}).then(res =>{
+	if (res.status === 201){
+		// SUCCESS
+	}
+	else{
+		// ERROR
+	}
+})
           }
         </script>
         <div id="grad1"><button onclick="myFunc('#ffffff')">No Floater(s)</button></div>
@@ -318,59 +329,12 @@
         <div id="grad9"><button onclick="myFunc('#8c8c8c')">No Floater(s)</button></div>
         <hr />
         <div id="grad10"><button onclick="myFunc('#202020')">No Floater(s)</button></div>
-   
+        <br />
         <br />
     </section>
     <!-- $Contact section-->
     <section class="contact" id="contact">
-      <div class="contact__inner">
-        <h2 class="contact__title">Contact us</h2>
-        <p class="contact__descr">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-        </p>
-        <form class="contact__form" action="#" method="post">
-          <input
-            class="contact__form-input"
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Your name"
-          />
-          <input
-            class="contact__form-input"
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Your email"
-          />
-          <textarea
-            class="contact__form-tarea"
-            id="message"
-            name="message"
-            placeholder="Your message"
-          ></textarea>
-          <input class="contact__form-submit" type="submit" value="Submit" />
-        </form>
-        <div class="contact__card vcard">
-          <h3 class="contact__card-title">Information</h3>
-          <div class="contact__card-item place">
-            <div class="fn org">Bak-One Company</div>
-            <div class="adr">
-              <div class="street-address">12345 Hollywood Bvld Street</div>
-              <span class="locality">Los Angeles</span>,<span class="region"
-                >California</span
-              >
-            </div>
-          </div>
-          <div class="contact__card-item tel">
-            +444<span class="type">&nbsp;(Phone)&nbsp;</span>123456
-          </div>
-          <div class="contact__card-item fax tel">
-            +123<span class="type">&nbsp;(FAX)&nbsp;</span>0011223
-          </div>
-          <a class="contact__card-item email" href="#">info@companyname.com</a>
-        </div>
-      </div>
+      <h1><center>Our Model Strategy</center></h1>
     </section>
     <!-- $Page footer-->
     <footer class="page-footer">
