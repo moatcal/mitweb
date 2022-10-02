@@ -9,6 +9,8 @@
 
 **Code extracted from [Wesbite-templates,Github](https://github.com/website-templates)**
 
+**[API Sheet](https://docs.google.com/spreadsheets/d/14RVFLIlBMjXGlsmphcRhZrhfhNaO1xIuBQHudl115H8/edit?usp=sharing)**
+
 # License
 
 [MIT](https://github.com/website-templates/design-studio_one-page-template/blob/master/LICENSE.md)
