@@ -5,7 +5,7 @@
     - Mohammed Ali Abed, UC Berkeley 2022
     - Anish Dhanasekaran, RPI 2026
     - Shubankar Tripathy, UMass Amherst, 2024
-    - Riley Han, Yale University 2026
+    - Rilyn Han, Yale University 2026
 
 **Code extracted from [Wesbite-templates,Github](https://github.com/website-templates)**
 
